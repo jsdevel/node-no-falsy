@@ -1,7 +1,7 @@
 {
   "name": "no-falsy",
   "main": "no-falsy.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Removes falsy values from objects and arrays.  Converts all other falsy values to null.",
   "author": "Joseph Spencer",
   "scripts": {
