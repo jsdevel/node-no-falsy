@@ -1,23 +1,23 @@
 {
-  "name": "no-nil",
-  "main": "no-nil.js",
+  "name": "no-falsy",
+  "main": "no-falsy.js",
   "version": "1.0.0",
-  "description": "Removes nil values from objects and arrays.  Converts all other nil values to null.",
+  "description": "Removes falsy values from objects and arrays.  Converts all other falsy values to null.",
   "author": "Joseph Spencer",
   "scripts": {
-    "pretest": "jshint no-nil.js test.js",
+    "pretest": "jshint no-falsy.js test.js",
     "cover": "istanbul cover _mocha -- ./test.js && cat ./coverage/lcov.info | coveralls -v && rm -rf coverage",
     "test": "mocha -w ./test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsdevel/node-no-nil.git"
+    "url": "https://github.com/jsdevel/node-no-falsy.git"
   },
   "keywords": [],
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jsdevel/node-no-nil/issues"
+    "url": "https://github.com/jsdevel/node-no-falsy/issues"
   },
   "devDependencies": {
     "chai": "^3.3.0",
