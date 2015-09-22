@@ -10,20 +10,20 @@ describe('no-nil', function() {
   it('should remove falsy values from objects', function() {
     var input = {boo: 0, foo: null, coo: 5};
 
-    noFalsy(input);
+    var result = noFalsy(input);
 
-    expect('boo' in input).to.be.false;
-    expect('foo' in input).to.be.false;
-    input.coo.should.equal(5);
+    expect('boo' in result).to.be.false;
+    expect('foo' in result).to.be.false;
+    result.coo.should.equal(5);
   });
 
   it('should remove falsy values from arrays', function() {
     var input = [null, '', 4];
 
-    noFalsy(input);
+    var result = noFalsy(input);
 
-    input.length.should.equal(1);
-    input[0].should.equal(4);
+    result.length.should.equal(1);
+    result[0].should.equal(4);
   });
 
   it('should return null for falsy values', function() {
