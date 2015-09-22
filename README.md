@@ -7,8 +7,7 @@
 var noNil = require('no-falsy');
 var input = [1, undefined];
 
-noNil(input);
-console.log(input); // [1];
+console.log(noNil(input)); // [1];
 ```
 
 ##LICENSE
